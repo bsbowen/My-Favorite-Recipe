@@ -1,0 +1,213 @@
+.header1 {
+  font: normal;
+  margin-bottom:20px;
+  padding: 10px 10px 30px 10px;
+  color: white;
+}
+
+/*added flex to image div*/
+
+.imagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+/*change all h1 header text from black to  white*/
+
+/*tried to insert image of cookies, need to figure out styling*/
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333;
+
+}
+
+/*applies to index.html paragraph border*/
+.content {
+  line-height: 20px;
+  border-style: outset;
+  border-block-color: rgb(172, 171, 175);
+  padding: 5px 5px 5px 5px;
+}
+
+/*applies to list in directions and ingredients*/
+.listcontent {
+  text-wrap: pretty;
+  line-height: 25px;
+  border-style: outset;
+  border-block-color: rgb(172, 171, 175);
+  padding: 5%;
+ 
+}
+
+
+/*.....................adding flexbox style to headers......................*/ 
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: rgba(37, 21, 5, 0.842);
+}
+
+/*adding nav bar on index.html to ingredients and home page*/
+.nav {
+  background-color: rgba(37, 21, 5, 0.842);
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px;
+  padding:0;
+  
+}
+/* nav links hover */
+.nav:hover {
+  background-color: #380ee046;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+li a {
+  color: white;
+}
+
+
+/*form styling...........................................*/
+h1{
+color: white;
+}
+
+.h1form{
+display: flexbox;
+justify-content: center;
+
+}
+
+.forms {
+  font-family: Arial, sans-serif;
+  background-color: rgba(37, 21, 5, 0.689);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+form {
+  background-color: #ffffff00;
+  padding: 20px
+  border-radius 8px;
+  max-width: 400px;
+  width: 100%;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+form textarea {
+  resize: vertical;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #b47426;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #b3aa00;
+}
+
+/* Default media query for responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px; /* Slightly smaller font size for better readability on small screens */
+    padding: 10px; /* Add some padding for better spacing */
+  }
+  .header1 {
+    font-size: 20px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+  .nav li {
+    font-size: 18px; /* Adjust font size */
+    padding: 8px; /* Adjust padding */
+  }
+  form {
+    padding: 15px; /* Adjust form padding */
+  }
+  form input,
+  form textarea {
+    font-size: 14px; /* Adjust input/textarea font size */
+    padding: 8px; /* Adjust input/textarea padding */
+  }
+  form button {
+    padding: 8px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+  }
+}
+/*............ New styles for the nutritional information table............... */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nutrition-table {
+  width: 80%;
+  max-width: 600px;
+  border-collapse: collapse;
+  background-color: #f6f6f739;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-table th, .nutrition-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.nutrition-table th {
+  background-color: rgba(37, 21, 5, 0.71);
+  font-weight: bold;
+}
+
+.nutrition-table tbody tr:nth-child(odd) {
+  background-color: #915c20a4;
+}
+
+.nutrition-table tbody tr:nth-child(even) {
+  background-color: #bbae5261;
+}
+
+.nutrition-table tbody tr:hover {
+  background-color: #380ee046;
+}
